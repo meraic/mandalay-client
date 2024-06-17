@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Services\31eyzy2o.lvi~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.10.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0" />
+    <PackageReference Include="TableStorage.Abstractions.POCO" Version="2.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\ReferenceData\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MandalayClient\MandalayClient.csproj" />
+  </ItemGroup>
+
+</Project>
